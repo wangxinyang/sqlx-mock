@@ -1,0 +1,21 @@
+[package]
+name = "sqlx_mock"
+version = "0.1.0"
+authors = ["Tosei <359387050@qq.com>"]
+edition = "2021"
+license = "MIT"
+documentation = "https://docs.rs/sqlx-mock"
+repository = "https://github.com/wangxinyang/sqlx-mock"
+homepage = "https://github.com/wangxinyang/sqlx-mock"
+description = "A simple tool to test sqlx with postgres. It will automatically create a database and drop it after the test."
+
+readme = "README.md"
+categories = ["development-tools"]
+keywords = ["sqlx", "postgres", "database", "test"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sqlx = { version = "0.6.2", features = ["runtime-tokio-rustls", "postgres"] }
+tokio = { version = "1.21.2", features = ["macros", "rt", "rt-multi-thread"] }
+uuid = { version = "1.2.1", features = ["v4"] }
