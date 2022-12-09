@@ -94,7 +94,7 @@ impl Drop for TestPostgres {
 impl Default for TestPostgres {
     fn default() -> Self {
         Self::new(
-            "postgres://tosei:tosei@localhost:5432".to_string(),
+            "postgres://postgres@localhost:5432".to_string(),
             Path::new("./migrations"),
         )
     }
