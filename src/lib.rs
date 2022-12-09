@@ -7,8 +7,8 @@ use tokio::runtime::Runtime;
 use uuid::Uuid;
 
 pub struct TestPostgres {
-    server_url: String,
-    dbname: String,
+    pub server_url: String,
+    pub dbname: String,
 }
 
 impl TestPostgres {
